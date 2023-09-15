@@ -1,0 +1,36 @@
+.user-nav__list {
+  display: flex;
+  column-gap: 24px;
+
+  @media screen and (max-width: 1024px) {
+    column-gap: 18px 0;
+  }
+
+  @media screen and (max-width: 768px) {
+    column-gap: 14px 0;
+  }
+}
+
+.user-nav__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.user-nav__link {
+  width: 24px;
+  height: 24px;
+}
+
+.user-nav__icon {
+  fill: var(--black);
+  transition: fill 300ms;
+
+  &:hover {
+    fill: var(--brown);
+  }
+}
+
+.user-nav__icon.active {
+  fill: var(--brown);
+}

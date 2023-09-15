@@ -1,0 +1,44 @@
+.header__wrapper {
+  padding: 24px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media screen and (max-width: 1024px) {
+    padding: 18px 0;
+  }
+
+  @media screen and (max-width: 768px) {
+    padding: 14px 0;
+  }
+}
+
+.header__nav-container {
+  display: flex;
+  align-items: center;
+  column-gap: 80px;
+}
+
+.header__navbar {
+  display: block;
+
+  @media screen and (max-width: 1024px) {
+    display: none;
+  }
+}
+
+.header__usernav {
+  display: block;
+
+  @media screen and (max-width: 1024px) {
+    display: none;
+  }
+}
+
+.burger-menu {
+  display: none;
+
+  @media screen and (max-width: 1024px) {
+    display: inline-block;
+  }
+}
