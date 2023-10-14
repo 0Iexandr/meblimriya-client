@@ -1,24 +1,40 @@
 .burger {
-  position: absolute;
-  overflow-y: auto;
-  top: 106px;
-  // height: calc(100vh - 146px);
-  height: 100vh;
+  position: fixed;
+  top: 105px;
+  right: 0;
   width: 100vw;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  row-gap: 80px;
-  padding: 40px 0;
-  background-color: var(--white);
-  right: -100vw;
-  transition: right 300ms ease;
+  height: 100vh;
+  opacity: 0;
+  visibility: hidden;
+  transition:
+    opacity 300ms ease,
+    visibility 300ms;
+
+  &.open {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .burger__content {
+    position: absolute;
+    top: 0;
+    right: -100vw;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--white);
+    transition: right 300ms ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 80px;
+    padding: 40px 0;
+
+    &.open {
+      right: 0;
+    }
+  }
 
   @media screen and (max-width: 768px) {
     top: 88px;
   }
-}
-
-.burger.open {
-  right: 0;
 }

@@ -1,0 +1,52 @@
+.footer__wrapper {
+  display: flex;
+  align-items: flex-start;
+  padding: 24px 0;
+  gap: 24px;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
+}
+
+.footer__about-column {
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+}
+
+.footer__logo-container {
+  display: flex;
+  align-items: center;
+  column-gap: 24px;
+}
+
+.footer__title {
+  color: var(--black);
+  font-family: 'Commissioner';
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+}
+
+.footer__terms-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+}
+
+.footer__terms-item {
+  display: flex;
+  align-items: center;
+  column-gap: 24px;
+  color: var(--black);
+  font-family: 'Commissioner';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27px;
+}
+
+.footer__terms-icon {
+  width: 60px;
+  height: 60px;
+}

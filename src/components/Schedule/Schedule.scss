@@ -1,0 +1,21 @@
+.schedule {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.schedule__title {
+  color: var(--black);
+  font-family: 'Commissioner';
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+}
+
+.schedule__subtitle {
+  color: var(--black);
+  font-family: 'Commissioner';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27px;
+}

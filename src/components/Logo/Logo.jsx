@@ -6,7 +6,10 @@ import logo from '../../assets/img/logo.jpg';
 
 const Logo = ({ setIsBurgerOpen }) => {
   return (
-    <Link to="/" onClick={() => setIsBurgerOpen(false)}>
+    <Link
+      to="/"
+      onClick={() => (setIsBurgerOpen ? setIsBurgerOpen(false) : null)}
+    >
       <img src={logo} alt="logo" className="logo__img" />
     </Link>
   );

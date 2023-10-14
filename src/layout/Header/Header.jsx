@@ -11,6 +11,8 @@ import UserNav from '../../components/UserNav/UserNav';
 import Logo from '../../components/Logo/Logo';
 import BurgerMenu from '../../components/BurgerMenu/BurgerMenu';
 
+import ScrollToTop from '../../utils/ScrollToTop';
+
 const Header = () => {
   const [isBurgerOpen, setIsBurgerOpen] = useState(false);
 
@@ -27,14 +29,13 @@ const Header = () => {
             <NavBar className="header__navbar" />
           </div>
           <UserNav className="header__usernav" />
-          <div className="burger-menu">
+          <div className="header__burger">
             <Hamburger toggled={isBurgerOpen} toggle={setIsBurgerOpen} />
-            {isBurgerOpen && (
-              <BurgerMenu
-                isBurgerOpen={isBurgerOpen}
-                setIsBurgerOpen={setIsBurgerOpen}
-              />
-            )}
+            <ScrollToTop trigger={isBurgerOpen} />
+            <BurgerMenu
+              isBurgerOpen={isBurgerOpen}
+              setIsBurgerOpen={setIsBurgerOpen}
+            />
           </div>
         </div>
       </Container>

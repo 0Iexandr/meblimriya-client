@@ -23,7 +23,9 @@ const NavBar = ({ className = '', setIsBurgerOpen }) => {
               <Link
                 to={link}
                 className={`nav__link ${pathname === link ? 'active' : ''}`}
-                onClick={() => setIsBurgerOpen(false)}
+                onClick={() =>
+                  setIsBurgerOpen ? setIsBurgerOpen(false) : null
+                }
               >
                 {item}
               </Link>

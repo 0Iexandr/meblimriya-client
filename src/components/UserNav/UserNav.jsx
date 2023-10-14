@@ -22,7 +22,9 @@ const UserNav = ({ className = '', setIsBurgerOpen }) => {
               <Link
                 to={link}
                 className="user-nav__link"
-                onClick={() => setIsBurgerOpen(false)}
+                onClick={() =>
+                  setIsBurgerOpen ? setIsBurgerOpen(false) : null
+                }
               >
                 <svg
                   className={`user-nav__icon ${
