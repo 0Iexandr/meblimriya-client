@@ -1,0 +1,39 @@
+.contacts {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.contacts__title {
+  color: var(--black);
+  font-family: 'Commissioner';
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+}
+
+.contacts__number {
+  color: var(--grey);
+  font-family: 'Commissioner';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27px;
+  transition: color 300ms;
+
+  &:hover {
+    color: var(--brown);
+  }
+}
+
+.contacts__mail {
+  color: var(--grey);
+  font-family: 'Commissioner';
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 27px;
+  transition: color 300ms;
+
+  &:hover {
+    color: var(--brown);
+  }
+}

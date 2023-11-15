@@ -1,0 +1,48 @@
+.socials {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.socials__title {
+  color: var(--black);
+  font-family: 'Commissioner';
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+}
+
+.socials__list {
+  display: flex;
+  column-gap: 18px;
+
+  @media screen and (max-width: 1024px) {
+    column-gap: 16px;
+  }
+
+  @media screen and (max-width: 768px) {
+    column-gap: 14px;
+  }
+}
+
+.socials__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.socials__icon {
+  width: 40px;
+  height: 40px;
+  fill: var(--black);
+  transition: fill 300ms;
+
+  &:hover {
+    fill: var(--brown);
+  }
+
+  @media screen and (max-width: 1024px) {
+    width: 34px;
+    height: 34px;
+  }
+}

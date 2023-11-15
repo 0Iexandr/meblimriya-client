@@ -1,23 +1,18 @@
 import './Footer.scss';
 
+import Contacts from '../../components/Contacts/Contacts';
 import Container from '../../components/Container/Container';
 import Logo from '../../components/Logo/Logo';
-
-import originalIcon from '../../assets/svg/original.svg';
-import returnIcon from '../../assets/svg/return.svg';
 import Schedule from '../../components/Schedule/Schedule';
+import Socials from '../../components/Socials/Socials';
+import Terms from '../../components/Terms/Terms';
 
-const footerData = {
-  termsIcons: [originalIcon, returnIcon],
-  terms: [
-    'У нас 100% гарантія на всі оригінальні товари від БРВ',
-    'Завдяки Рекламації товар безкоштовно підлягає обміну',
-  ],
-};
+import visa from '../../assets/svg/visa.svg';
+import mastercard from '../../assets/svg/mastercard.svg';
 
 const Footer = () => {
   return (
-    <footer>
+    <footer className="footer">
       <Container>
         <div className="footer__wrapper">
           <div className="footer__about-column">
@@ -25,25 +20,25 @@ const Footer = () => {
               <Logo />
               <h2 className="footer__title">Меблі Мрія</h2>
             </div>
-            <ul className="footer__terms-list">
-              {footerData.terms.map((item, idx) => {
-                return (
-                  <li key={idx} className="footer__terms-item">
-                    <img
-                      src={footerData.termsIcons[idx]}
-                      alt="terms icon"
-                      className="footer__terms-icon"
-                    />
-                    {item}
-                  </li>
-                );
-              })}
-            </ul>
+            <Terms />
           </div>
           <Schedule />
-          <Schedule />
-          <Schedule />
-          <Schedule />
+          <Contacts />
+          <Socials />
+        </div>
+        <hr className="footer__line"></hr>
+        <div className="footer__copyright">
+          <p className="footer__copyright-subtitle">
+            © MebliMriya 2023. All right reserved.
+          </p>
+          <div className="footer__copyright-wrapper">
+            <img src={visa} alt="visa" className="footer__copyright-img" />
+            <img
+              src={mastercard}
+              alt="mastercard"
+              className="footer__copyright-img"
+            />
+          </div>
         </div>
       </Container>
     </footer>
