@@ -1,0 +1,25 @@
+.discount {
+  display: flex;
+  background-color: var(--lightRed);
+  padding: 12px 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.discount__img {
+  width: 18px;
+  height: 18px;
+}
+
+.discount__description {
+  color: var(--black);
+  font-family: 'Commissioner';
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.discount__description-span {
+  color: var(--green);
+}
