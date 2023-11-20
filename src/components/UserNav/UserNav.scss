@@ -26,7 +26,8 @@
   fill: var(--black);
   transition: fill 300ms;
 
-  &:hover {
+  &:hover,
+  &:focus {
     fill: var(--brown);
   }
 }

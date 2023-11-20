@@ -1,4 +1,104 @@
 .hero {
+  height: 660px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  @media screen and (max-width: 1024px) {
+    flex-direction: row;
+  }
+}
+
+.hero__content {
+  display: flex;
+  width: 70%;
   height: 600px;
-  background-color: bisque;
+  background-color: var(--skin);
+  align-items: center;
+
+  @media screen and (max-width: 1024px) {
+    align-items: flex-start;
+    width: 100%;
+  }
+}
+
+.hero__img {
+  align-self: flex-end;
+  position: absolute;
+  width: 655px;
+  height: 475px;
+  margin-right: 5vw;
+  margin-bottom: 0;
+
+  @media screen and (max-width: 1280px) {
+    margin-right: 0;
+    scale: 0.8;
+  }
+
+  @media screen and (max-width: 1024px) {
+    scale: 0.7;
+    margin-bottom: 5vw;
+  }
+
+  @media screen and (max-width: 768px) {
+    scale: 0.55;
+    margin-bottom: 0;
+  }
+
+  @media screen and (max-width: 380px) {
+    scale: 0.45;
+  }
+}
+
+.hero__info {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+
+  @media screen and (max-width: 1024px) {
+    row-gap: 10px;
+    margin-top: 30px;
+  }
+}
+
+.hero__title {
+  color: var(--black);
+  font-family: 'Commissioner';
+  font-size: 40px;
+  font-weight: 500;
+  line-height: normal;
+  max-width: 40vw;
+
+  @media screen and (max-width: 1300px) {
+    max-width: 30vw;
+  }
+
+  @media screen and (max-width: 1024px) {
+    max-width: fit-content;
+    font-size: 32px;
+  }
+}
+
+.hero__subtitle {
+  color: var(--grey);
+  font-family: 'Commissioner';
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  max-width: 30vw;
+  margin-bottom: 40px;
+
+  @media screen and (max-width: 1280px) {
+    max-width: 25vw;
+  }
+
+  @media screen and (max-width: 1024px) {
+    max-width: fit-content;
+    margin-bottom: 20px;
+    font-size: 16.5px;
+  }
+
+  @media screen and (max-width: 380px) {
+    margin-bottom: 10px;
+  }
 }

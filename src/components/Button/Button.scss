@@ -1,0 +1,30 @@
+.button {
+  width: fit-content;
+  display: flex;
+  padding: 14px 32px;
+  align-items: center;
+  gap: 10px;
+  background-color: var(--brown);
+  color: var(--white);
+  text-align: center;
+  font-family: 'Commissioner';
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+  cursor: pointer;
+  transition: background-color 300ms;
+
+  &:hover,
+  &:focus {
+    background-color: var(--grey);
+
+    .button__arrow {
+      transform: scaleX(1.5);
+    }
+  }
+}
+
+.button__arrow {
+  transition: transform 300ms;
+  transform-origin: left center;
+}

@@ -20,7 +20,8 @@
   line-height: 27px;
   transition: color 300ms;
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: var(--brown);
   }
 }
@@ -33,7 +34,8 @@
   line-height: 27px;
   transition: color 300ms;
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: var(--brown);
   }
 }
