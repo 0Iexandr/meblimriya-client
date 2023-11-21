@@ -6,7 +6,7 @@ import Button from '../../components/Button/Button';
 
 const Hero = () => {
   return (
-    <section className="hero">
+    <section className="hero sections__padding">
       <div className="hero__content">
         <Container>
           <div className="hero__info">
