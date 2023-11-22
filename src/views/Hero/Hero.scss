@@ -40,7 +40,7 @@
     bottom: -1vh;
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 770px) {
     scale: 0.55;
     bottom: -4vh;
   }
@@ -78,6 +78,10 @@
     max-width: fit-content;
     font-size: 32px;
   }
+
+  @media screen and (max-width: 770px) {
+    max-width: 600px;
+  }
 }
 
 .hero__subtitle {
@@ -97,6 +101,10 @@
     max-width: fit-content;
     margin-bottom: 20px;
     font-size: 16.5px;
+  }
+
+  @media screen and (max-width: 770px) {
+    max-width: 600px;
   }
 
   @media screen and (max-width: 380px) {
