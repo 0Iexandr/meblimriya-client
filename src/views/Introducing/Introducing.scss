@@ -1,0 +1,100 @@
+.introducing__wrapper {
+  display: flex;
+  column-gap: 50px;
+  align-items: center;
+
+  @media screen and (max-width: 1024px) {
+    flex-direction: column;
+    row-gap: 54px;
+  }
+}
+
+.introducing__info {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+
+  @media screen and (max-width: 1024px) {
+    row-gap: 10px;
+    margin-top: 30px;
+  }
+}
+
+.introducing__title {
+  color: var(--black);
+  font-family: 'Commissioner';
+  font-size: 40px;
+  font-weight: 500;
+  line-height: normal;
+
+  @media screen and (max-width: 1024px) {
+    font-size: 32px;
+  }
+}
+
+.introducing__subtitle {
+  color: var(--grey);
+  font-family: 'Commissioner';
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  margin-bottom: 40px;
+
+  @media screen and (max-width: 1024px) {
+    margin-bottom: 20px;
+    font-size: 16.5px;
+  }
+
+  @media screen and (max-width: 380px) {
+    margin-bottom: 10px;
+  }
+}
+
+.introducing__img {
+  width: 558px;
+  height: 558px;
+
+  @media screen and (max-width: 1024px) {
+    width: 448px;
+    height: 448px;
+  }
+
+  @media screen and (max-width: 768px) {
+    width: 358px;
+    height: 358px;
+  }
+
+  @media screen and (max-width: 380px) {
+    width: 288px;
+    height: 288px;
+  }
+}
+
+.introducing__item {
+  color: var(--black);
+  font-family: 'Commissioner';
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 36px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 24px 0;
+  border-bottom: 1px solid var(--secondSkin);
+
+  @media screen and (max-width: 1024px) {
+    font-size: 20px;
+  }
+
+  &--span {
+    color: var(--brown);
+
+    @media screen and (max-width: 1220px) {
+      max-width: 80px;
+    }
+
+    @media screen and (max-width: 1024px) {
+      max-width: fit-content;
+    }
+  }
+}
