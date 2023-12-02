@@ -8,7 +8,7 @@ const Discount = () => {
       <img src={ringing} alt="ringing" className="discount__img" />
       <p className="discount__description">
         На замовлення{' '}
-        <span className="discount__description-span">від 7000 грн</span>{' '}
+        <span className="discount__description--span">від 7000 грн</span>{' '}
         доставка Безкоштовна!
       </p>
     </div>
