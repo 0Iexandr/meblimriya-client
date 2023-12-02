@@ -12,19 +12,36 @@
   font-weight: 500;
   line-height: 27px;
   cursor: pointer;
-  transition: background-color 300ms;
+  transition: all 300ms;
 
   &:hover,
   &:focus {
-    background-color: var(--grey);
-
     .button__arrow {
       transform: scaleX(1.5);
     }
   }
 }
 
+.button__brown {
+  &:hover,
+  &:focus {
+    background-color: var(--grey);
+  }
+}
+
 .button__arrow {
   transition: transform 300ms;
   transform-origin: left center;
+}
+
+.button__white {
+  border: 1px solid var(--brown);
+  background-color: var(--white);
+  color: var(--brown);
+
+  &:hover,
+  &:focus {
+    border-color: var(--grey);
+    color: var(--grey);
+  }
 }
