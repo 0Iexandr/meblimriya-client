@@ -11,8 +11,8 @@ const suggestedData = {
   images: [sets, sets, sets],
   titles: ['Перший елемент', 'Другий елемент', 'Третій елемент'],
   descriptions: ['Короткий опис', 'Короткий опис', 'Короткий опис'],
-  prices: [8000, 13000, 24000]
-}
+  prices: [8000, 13000, 24000],
+};
 
 const Suggested = () => {
   return (
@@ -25,11 +25,15 @@ const Suggested = () => {
             <img src={arrow} alt="arrow" />
           </Link>
         </div>
-        <ul className='suggested__list'>
+        <ul className="suggested__list">
           {suggestedData.images.map((image, idx) => {
             return (
               <li className="suggested__item" key={idx}>
-                <img src={image} alt="suggested furniture" className="suggested__item--img" />
+                <img
+                  src={image}
+                  alt="suggested furniture"
+                  className="suggested__item--img"
+                />
                 <h3>{suggestedData.titles[idx]}</h3>
                 <p>{suggestedData.descriptions[idx]}</p>
                 <span>{suggestedData.prices[idx]} грн</span>
