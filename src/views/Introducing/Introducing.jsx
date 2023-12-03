@@ -6,7 +6,7 @@ import t from '../../assets/img/Tera.jpg';
 
 const introducingData = {
   listItems: ['Постачальник', 'Якість', 'Категорії'],
-  listValues: ['BRW Україна', '99.9%', '20+'],
+  listValues: ['БРВ Україна', '99.9%', '20+'],
 };
 
 const Introducing = () => {
