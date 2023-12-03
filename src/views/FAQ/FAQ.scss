@@ -1,0 +1,42 @@
+.faq__title {
+  color: var(--black);
+  font-family: 'Commissioner';
+  font-size: 36px;
+  font-weight: 500;
+  line-height: normal;
+  text-align: center;
+  margin-bottom: 40px;
+
+  @media screen and (max-width: 1024px) {
+    margin-bottom: 20px;
+    font-size: 32px;
+  }
+}
+
+.faq-row {
+  border-bottom: 1px solid var(--secondSkin) !important;
+}
+
+.row-title {
+  color: var(--black) !important;
+  font-family: 'Commissioner';
+  font-size: 22px !important;
+  font-weight: 500;
+  line-height: 36px;
+
+  @media screen and (max-width: 1024px) {
+    font-size: 18px !important;
+  }
+}
+
+.row-content-text {
+  color: var(--grey) !important;
+  font-family: 'Commissioner';
+  font-size: 18px !important;
+  font-weight: 400;
+  line-height: 27px;
+
+  @media screen and (max-width: 1024px) {
+    font-size: 16.5px !important;
+  }
+}
