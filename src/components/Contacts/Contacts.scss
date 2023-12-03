@@ -19,11 +19,21 @@
   font-size: 16px;
   line-height: 27px;
   transition: color 300ms;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  column-gap: 12px;
 
   &:hover,
   &:focus {
     color: var(--brown);
   }
+}
+
+.contacts__icons {
+  display: flex;
+  width: fit-content;
+  height: 30px;
 }
 
 .contacts__mail {
@@ -33,6 +43,7 @@
   font-size: 17px;
   line-height: 27px;
   transition: color 300ms;
+  width: fit-content;
 
   &:hover,
   &:focus {
