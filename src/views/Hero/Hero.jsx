@@ -17,7 +17,7 @@ const Hero = () => {
               Зробіть своє життя краще за допомогою колекції сучасних меблів від
               Меблі Мрія.
             </p>
-            <Button text="Докладніше" arrow={true} />
+            <Button text="Докладніше" arrow={true} isLink={true} to="/shop" />
           </div>
         </Container>
       </div>
