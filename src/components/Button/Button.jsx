@@ -2,7 +2,7 @@ import './Button.scss';
 
 import { Link } from 'react-router-dom';
 
-const Button = ({ isLink, to, text, onClick, arrow, white }) => {
+const Button = ({ isLink, to, target, text, onClick, arrow, white }) => {
   return (
     <div>
       {isLink ? (
@@ -10,7 +10,7 @@ const Button = ({ isLink, to, text, onClick, arrow, white }) => {
           to={to}
           className={`button ${white ? 'button__white' : 'button__brown'}`}
           onClick={onClick}
-          target="_blank"
+          target={target}
         >
           {text}
           {arrow ? <span className="button__arrow">→</span> : null}
