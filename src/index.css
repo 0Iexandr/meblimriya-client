@@ -12,6 +12,18 @@ body {
   -webkit-tap-highlight-color: transparent;
 }
 
+body::-webkit-scrollbar {
+  width: 8px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--brown);
+}
+
+body::-webkit-scrollbar-track {
+  background-color: var(--secondSkin);
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
