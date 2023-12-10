@@ -1,3 +1,7 @@
+.introducing {
+  overflow-x: hidden;
+}
+
 .introducing__wrapper {
   display: flex;
   column-gap: 50px;
@@ -59,7 +63,6 @@
   width: 558px;
   height: 558px;
   object-fit: cover;
-  overflow-x: hidden;
 
   @media screen and (max-width: 1024px) {
     width: 448px;
