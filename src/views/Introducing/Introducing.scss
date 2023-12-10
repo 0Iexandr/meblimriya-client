@@ -1,7 +1,3 @@
-.introducing {
-  overflow-x: hidden;
-}
-
 .introducing__wrapper {
   display: flex;
   column-gap: 50px;
@@ -34,6 +30,11 @@
   @media screen and (max-width: 1024px) {
     font-size: 32px;
   }
+
+  @media screen and (max-width: 320px) {
+    font-size: 24px;
+    overflow-x: hidden;
+  }
 }
 
 .introducing__subtitle {
@@ -58,6 +59,7 @@
   width: 558px;
   height: 558px;
   object-fit: cover;
+  overflow-x: hidden;
 
   @media screen and (max-width: 1024px) {
     width: 448px;
