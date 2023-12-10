@@ -3,6 +3,7 @@ import { Route, Routes } from 'react-router-dom';
 
 const Layout = lazy(() => import('./layout/Layout/Layout'));
 const Home = lazy(() => import('./pages/Home/Home'));
+const Shop = lazy(() => import('./pages/Shop/Shop'));
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Layout>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/shop" element={<Shop />} />
           <Route path="*" element={<Home />} />
         </Routes>
       </Layout>
